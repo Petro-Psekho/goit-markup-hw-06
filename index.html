@@ -457,13 +457,50 @@
     </footer>
     <!-- - - - - - - - -  MODAL - - - - - - - - -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal></div> -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <form class="modal-form-list">
+          <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label for="person" class="form-label">Ім'я</label>
+            <input class="form-input" type="text" name="person-name" id="person" />
+            <svg width="18" height="18" class="icon">
+              <use href="./images/sprite.svg#modal-person"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="phone" class="form-label">Телефон</label>
+            <input class="form-input" type="tel" name="phone" id="phone" />
+            <svg width="18" height="18" class="icon">
+              <use href="./images/sprite.svg#modal-phone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="mail" class="form-label">Пошта</label>
+            <input class="form-input" type="email" name="mail" id="mail" />
+            <svg width="18" height="18" class="icon">
+              <use href="./images/sprite.svg#modal-mail"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea
+              class="comment-input"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
       </div>
     </div>
 
