@@ -718,7 +718,7 @@ body {
 }
 
 .mailing {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .mailing .mailing-inline {
@@ -837,11 +837,17 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  outline: none;
 
   border-radius: 50%;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+.backdrop .close:hover,
+.backdrop .close:focus {
+  fill: var(--main-color);
 }
 
 .modal-form-list {
@@ -977,7 +983,7 @@ body {
 
 .form-checkbox:hover ~ .icon-no-check,
 .form-checkbox:focus ~ .icon-no-check {
-  opacity: 0.6;
+  fill: var(--main-color);
 }
 
 .icon-check {
