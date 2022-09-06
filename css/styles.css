@@ -768,6 +768,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   color: #ffffff;
   background-color: var(--main-color);
 }
@@ -880,6 +882,18 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover + .icon,
+.form-input:focus + .icon {
+  fill: var(--main-color);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--main-color);
 }
 
 .form-field .icon {
@@ -900,12 +914,19 @@ body {
   box-sizing: border-box;
   resize: none;
   outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-input:hover,
+.comment-input:focus {
+  border-color: var(--main-color);
 }
 
 .checkbox-field {
@@ -945,10 +966,9 @@ body {
   width: 16px;
   height: 15px;
   border-radius: 2px;
+  opacity: 1;
 
   background-color: #ffffff;
-
-  opacity: 1;
 }
 
 .form-checkbox:checked ~ .icon-no-check {
@@ -970,6 +990,8 @@ body {
   background-color: var(--main-color);
 
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-checkbox:checked ~ .icon-check {
@@ -981,6 +1003,8 @@ body {
   outline: none;
 
   color: var(--main-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-link:hover,
@@ -1003,7 +1027,14 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   background-color: var(--main-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
 }
